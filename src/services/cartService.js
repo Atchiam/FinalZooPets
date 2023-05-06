@@ -1,4 +1,5 @@
 import cartModel from "../models/MongoDB/cartModel.js"; 
+import productModel from "../models/MongoDB/productModel.js";
 
 export const createCart = async () => {
     try{
@@ -28,7 +29,20 @@ export const findCartById = async (id) => {
 
 export const updateCart = async (id,info) => {
     try{
-        return await cartModel.findByIdAndUpdate(id,info)
+        const cart = await cartModel.findByIdAndUpdate(id,info, {new:true})
+
+        let total = 0;
+        for (const productInCart of cart.products){
+            const product = await productModel.findById(productInCart.productId)
+            total += product.price * productInCart.quantity
+        }
+
+        cart.total = total
+
+        cart.save()
+
+        return cart;
+
     }catch(error){
         throw new Error(error)
     }

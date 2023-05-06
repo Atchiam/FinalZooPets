@@ -7,12 +7,18 @@ import MongoStore from 'connect-mongo'
 import mongoose from 'mongoose'
 import passport from 'passport';
 import initializePassport from './config/passport.js';
+import nodemailer from 'nodemailer'
+import { engine } from "express-handlebars";
+import { Server} from 'socket.io'
+import * as path from 'path'
+import { insertMessage , findMessage  } from "./services/messageService.js"
 
 import routerCart from './routes/cart.routes.js';
 import routerProduct from './routes/productos.routes.js';
 import routerSession from './routes/session.routes.js';
 import routerUser from './routes/user.routes.js';
 import routerGithub from './routes/github.routes.js';
+import routerMessage from "./routes/chat.routes.js"
 
 //CORS
 
@@ -51,10 +57,9 @@ const connectionMongoose = async () => {
 }
 
 app.set("port", process.env.PORT || 8080)
-const server = app.listen(app.get("port"), () =>{
+export const server = app.listen(app.get("port"), () =>{
     console.log(`Server on port ${app.get("port")}`);
 })
-
 
 connectionMongoose()
 
@@ -71,7 +76,63 @@ app.get('/getCookie', (req, res) => {
     res.send(req.signedCookies)
 })
 
-//midlewares
+// // ------ServerIO
+// const io = new Server(server);
+
+// io.on("connection", async (socket)=>{ 
+//     ------Mensajes
+//         console.log("Cliente conectado");
+//         findMessage().then((messages) => {
+//             socket.emit("allMessages", messages);
+//         })
+    
+//         socket.on("message", async (info) => {
+//             console.log(info);
+//             console.log(req.session.user);
+//             await insertMessage([info]).then(() => {
+//                 findMessage().then((messages) => {
+//                     socket.emit("allMessages", messages);
+//                 })
+//             })
+//         })
+//     })
+
+//mandar e-mail
+
+let transporter = nodemailer.createTransport({ //Genero la forma de enviar info desde mail (o sea, desde Gmail con x cuenta)
+    host: 'smtp.gmail.com', //Defino que voy a utilizar un servicio de Gmail
+    port: 465,
+    secure: true,
+    auth: {
+        user: "atchiam.fe@gmail.com", //Mail del que se envia informacion
+        pass: "wkohkvdycnlkesmq",
+        authMethod: 'LOGIN'
+    }
+
+})
+
+app.get('/email', async (req, res) => {
+    await transporter.sendMail({
+        from: 'Test Coder franciscopugh3@gmail.com',
+        to: "franciscopugh01@gmail.com",
+        subject: "Chiste",
+        html: `
+            <div>
+                <h2>¿Cuántos programadores hacen falta para cambiar una bombilla? – Ninguno, porque es un problema hardware. </h2>
+            </div>
+        `,
+        attachments: []
+    })
+    res.send("Email enviado")
+})
+app.engine('handlebars', engine({
+    runtimeOptions: {
+        allowProtoPropertiesByDefault: true,
+        allowProtoMethodsByDefault: true,
+    }
+}));
+app.set("view engine", 'handlebars');
+app.set('views', path.resolve(__dirname, './views'))
 
 
 //--------Routes
@@ -80,6 +141,8 @@ app.use('/products', express.static(__dirname + '/public'))
 app.use('/products', routerProduct) 
 app.use('/cart',express.static(__dirname + '/public'))
 app.use('/cart',routerCart)
+app.use('/chat', express.static(__dirname + '/public')) 
+app.use('/chat', routerMessage)
 app.use('/api/sessions', routerSession)
 app.use('/user', routerUser)
 app.use('/authSession', routerGithub)
