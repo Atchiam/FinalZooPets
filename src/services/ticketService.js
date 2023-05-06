@@ -17,7 +17,7 @@ export const findTicketByPurchaser = async (userEmail) => {
         throw new Error(error)
     }
 }
-export const CreateTicket = async (ticket) => {
+export const createTicket = async (ticket) => {
     try{
         const newTicket = await ticketModel.create(ticket)
         return newTicket
