@@ -126,38 +126,40 @@ export const deleteOneProdCart = async (req, res) => { //ANDA
 
 export const checkout = async (req,res) => {
         const idCarrito= req.session.user.cartId
-        const compradorEmail = req.session.user.email
+        const purchaser = req.session.user.email
+        
         try{
             const cart = await findCartById(idCarrito)
             const carritopopulated= await cart.populate({path: "products.productId", model: productModel})
 
-            const total = cart.total
-
+            const amount = cart.total
+            console.log("1");
             for (const prodInCart of carritopopulated.products) {
-                const prod = prodInCart.productId;
+                const product = prodInCart.productId;
                 const cantidad  = prodInCart.quantity
+                console.log("2");
                 if(cantidad > product.stock){
-                    const prodInd = cart.products.findIndex(product => product.productId.equals(prod._id))
+                    const prodInd = cart.products.findIndex(product => product.productId.equals(product._id))
                     cart.products.splice(prodInd, 1)
                 }
                 
             }
+            console.log("3");
+            const cartUpdate = await updateCart(idCarrito, cart)
 
-            const updateCart = await updateCart(idCarrito, cart)
-
-            if (updateCart.total !== total){
+            if (cartUpdate.total !== amount){
                 return res.status(400).send("no tenemos stock de alguno de tus productos")
             }
-
-            const nuevoTicket = await createTicket({total, compradorEmail})
-
+            console.log("4");
+            const nuevoTicket = await createTicket({amount, purchaser})
+            console.log("5");
             for (const prodInCart of cart.products){
                 const product = await findProductsById(prodInCart.productId)
                 const quantity = prodInCart.quantity
                 product.stock -= quantity
                 await product.save()
             }
-
+            console.log("6");
             await updateCart(idCarrito, {products:[]})
 
             return res.status(200).send({ticket:nuevoTicket})

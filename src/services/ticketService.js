@@ -1,4 +1,4 @@
-import ticketModel from "../models/MongoDB/ticketModel";
+import ticketModel from "../models/MongoDB/ticketModel.js";
 
 export const findTicketByCode = async (code) => {
     try{
@@ -19,9 +19,11 @@ export const findTicketByPurchaser = async (userEmail) => {
 }
 export const createTicket = async (ticket) => {
     try{
+        console.log("no");
         const newTicket = await ticketModel.create(ticket)
+        console.log("o si");
         return newTicket
-    }catch{
+    }catch(error){
         throw new Error(error)
     }
 }

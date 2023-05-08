@@ -6,13 +6,13 @@ const routerCart = Router()
 
 //--/cart
 
-routerCart.get('/',sessionCheck("Usuario"), controller.getCartId)                                    //anda
-routerCart.put('/',sessionCheck("Usuario"),controller.putAllArrayCart)                              //anda
-routerCart.delete('/',sessionCheck("Usuario"), controller.deleteAllProdCart)                       //anda
-routerCart.post('/product/:idProducto',sessionCheck("Usuario"), controller.addProdToCart )        //anda
-routerCart.put('/product/:idProducto',sessionCheck("Usuario"), controller.putQuantityCart)       //anda
-routerCart.delete('/product/:idProducto',sessionCheck("Usuario"), controller.deleteOneProdCart) //anda
-routerCart.get('/checkout',sessionCheck("Usuario"), controller.checkout)
+routerCart.get('/',sessionCheck("user"), controller.getCartId)                                    //anda
+routerCart.put('/',sessionCheck("user"),controller.putAllArrayCart)                              //anda
+routerCart.delete('/',sessionCheck("user"), controller.deleteAllProdCart)                       //anda
+routerCart.post('/product/:idProducto',sessionCheck("user"), controller.addProdToCart )        //anda
+routerCart.put('/product/:idProducto',sessionCheck("user"), controller.putQuantityCart)       //anda
+routerCart.delete('/product/:idProducto',sessionCheck("user"), controller.deleteOneProdCart) //anda
+routerCart.get('/checkout',sessionCheck("user"), controller.checkout)
 
 
 export default routerCart

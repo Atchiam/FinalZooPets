@@ -9,8 +9,6 @@ routerSession.get('/login', async (req, res) => {
     res.render("login",{ menssage:data})
 })
 routerSession.post('/login', loginUser)        //anda
-
-
 routerSession.get("/logout", destroySession) //anda
 routerSession.get("/current", current )     //anda
 

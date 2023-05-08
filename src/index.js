@@ -9,9 +9,8 @@ import passport from 'passport';
 import initializePassport from './config/passport.js';
 import nodemailer from 'nodemailer'
 import { engine } from "express-handlebars";
-import { Server} from 'socket.io'
 import * as path from 'path'
-import { insertMessage , findMessage  } from "./services/messageService.js"
+
 
 import routerCart from './routes/cart.routes.js';
 import routerProduct from './routes/productos.routes.js';
@@ -75,27 +74,6 @@ app.get('/setCookie', (req, res) => {
 app.get('/getCookie', (req, res) => {
     res.send(req.signedCookies)
 })
-
-// // ------ServerIO
-// const io = new Server(server);
-
-// io.on("connection", async (socket)=>{ 
-//     ------Mensajes
-//         console.log("Cliente conectado");
-//         findMessage().then((messages) => {
-//             socket.emit("allMessages", messages);
-//         })
-    
-//         socket.on("message", async (info) => {
-//             console.log(info);
-//             console.log(req.session.user);
-//             await insertMessage([info]).then(() => {
-//                 findMessage().then((messages) => {
-//                     socket.emit("allMessages", messages);
-//                 })
-//             })
-//         })
-//     })
 
 //mandar e-mail
 
