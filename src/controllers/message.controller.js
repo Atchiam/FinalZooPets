@@ -29,6 +29,14 @@ export const messageio = async (req, res) => {
             res.status(400).send(error.message);
         }
     }else{
-        return res.send("necesitas estar logiado para ingregar al chat")
+        console.log("necesitas estar logiado para ingregar al chat");
+            //------ServerIO
+            const io = new Server(server);
+            io.on("connection", async (socket)=>{ 
+                //------Mensajes
+                    console.log("Cliente conectado");
+                    const messages = [{user:"El servidor",email:"s@s.com",message:"Hola, ¡Bienvenido al servidor recorda que tenes que estar logiado para esto mientras te logias podes ver este video explicativo www.youtube.com/watch?v=C0fytYVZ_mQ"}]
+                    socket.emit("allMessages", messages);
+                });
     }
 };

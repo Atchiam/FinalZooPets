@@ -27,24 +27,22 @@ export const findCartById = async (id) => {
     }
 }
 
-export const updateCart = async (id,info) => {
-    try{
-        const cart = await cartModel.findByIdAndUpdate(id,info, {new:true})
+export const updateCart = async (id, info) => {
+    try {
+        const cart = await cartModel.findByIdAndUpdate(id, info, { new: true });
 
         let total = 0;
-        for (const productInCart of cart.products){
-            const product = await productModel.findById(productInCart.productId)
-            total += product.price * productInCart.quantity
+        for (const productInCart of cart.products) {
+            const product = await productModel.findById(productInCart.productId);
+            total += product.price * productInCart.quantity;
         }
-
-        cart.total = total
+        cart.total = total;
 
         cart.save()
 
         return cart;
 
-    }catch(error){
-        throw new Error(error)
+    } catch (error) {
+        throw new Error(error);
     }
 }
-
