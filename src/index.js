@@ -18,7 +18,7 @@ import routerSession from './routes/session.routes.js';
 import routerUser from './routes/user.routes.js';
 import routerGithub from './routes/github.routes.js';
 import routerMessage from "./routes/chat.routes.js"
-
+import routerFaker from "./ProductosFaker/routesFaker.routes.js"
 //CORS
 
 
@@ -124,3 +124,4 @@ app.use('/chat', routerMessage)
 app.use('/api/sessions', routerSession)
 app.use('/user', routerUser)
 app.use('/authSession', routerGithub)
+app.use ('/faker', routerFaker)
