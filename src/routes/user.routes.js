@@ -2,6 +2,7 @@ import { Router } from "express";
 import { registerUser } from "../controllers/session.controller.js";
 
 
+
 const routerUser = Router()
 // /user
 routerUser.get('/signup', async (req, res) => { 

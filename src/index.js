@@ -19,6 +19,7 @@ import routerUser from './routes/user.routes.js';
 import routerGithub from './routes/github.routes.js';
 import routerMessage from "./routes/chat.routes.js"
 import routerFaker from "./ProductosFaker/routesFaker.routes.js"
+import { errorHandler } from "./config/errorHandler.js"
 //CORS
 
 
@@ -125,3 +126,7 @@ app.use('/api/sessions', routerSession)
 app.use('/user', routerUser)
 app.use('/authSession', routerGithub)
 app.use ('/faker', routerFaker)
+
+//----- Middleware
+
+app.use(errorHandler)

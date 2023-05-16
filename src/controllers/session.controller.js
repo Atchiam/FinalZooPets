@@ -6,8 +6,21 @@
 //     password: "admincod3r123",
 // }
 import passport from "passport";
+import CustomError from "../utils/customError.js";
+import EErrors from "../utils/enums.js";
+import { generateUserErrorInfo } from "../utils/info.js";
 export const registerUser = async (req, res, next) => {
     try {
+        const {first_name,last_name,email,age,password}= req.body
+        if(!first_name||!last_name||!email||!age||!password){
+            CustomError.createError({
+                name:"User creation error",
+                cause: generateUserErrorInfo({first_name,last_name,email,age,password}),
+                message: "Error al crear el usuario faltan algunos de los campos",
+                code: EErrors.REQUIRED_ERROR
+            })
+            
+        }
         passport.authenticate("signup", async (err, user) => {
             if (err) {
                 return res.status(400).send({error: err});
@@ -18,7 +31,7 @@ export const registerUser = async (req, res, next) => {
             res.status(200).send("te registraste correctamente podes logiarte papa");
         })(req, res, next);
     } catch (error) {
-        res.status(500).send(error.message);
+        next(error)
     }
 };
 
@@ -37,11 +50,11 @@ export const loginUser = async (req, res, next) => {
         })(req, res, next);
 
     } catch (error) {
-        res.status(500).send("necesitas estar logiado para irte");
+        next(error);
     }
 };
 
-export const destroySession = async (req, res) => {
+export const destroySession = async (req, res, next) => {
     try {
         if (req.session.login) {
             req.session.destroy();
@@ -50,11 +63,11 @@ export const destroySession = async (req, res) => {
             res.status(400).send("necesitas estar logiado para irte");
         }
     } catch (error) {
-        res.status(400).send(error.message);
+        next(error);
     }
 };
 
-export const current = async (req, res) => {
+export const current = async (req, res, next) => {
     try {
         if (req.session.login) {
             res.status(200).json({ response: req.session.user });
@@ -62,6 +75,6 @@ export const current = async (req, res) => {
             res.status(400).send("no estas logiado papa");
         }
     } catch (error) {
-        res.status(400).send(error.message);
+        next(error);
     }
 };

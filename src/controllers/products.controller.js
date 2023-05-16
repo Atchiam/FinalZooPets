@@ -1,7 +1,7 @@
 import { findProductsById, insertProducts,updateOneProducts, paginateProducts,deleteOneProducts } from "../services/productService.js";
 
 export const getProd = 
-    async (req, res) => { 
+    async (req, res, next) => { 
         try{
             console.log(req.query)
             
@@ -49,7 +49,7 @@ export const getProd =
         }
     }
 
-export const getProdId = async (req, res) => {
+export const getProdId = async (req, res, next) => {
     const idProd = req.params.id
 
     try{
@@ -57,11 +57,11 @@ export const getProdId = async (req, res) => {
         return res.status(200).json(prod)
 
     }catch(error){
-        res.status(400).send(error.message)
+        next(error)
     }
     }
 
-export const addProd = async (req, res) => { 
+export const addProd = async (req, res, next) => { 
     const info = req.body
 
     try{
@@ -69,11 +69,11 @@ export const addProd = async (req, res) => {
         return res.status(200).send(prod)
 
     }catch(error){
-        res.status(400).send(error.message)
+        next(error)
     }
 }
 
-export const delProd = async (req, res) => {
+export const delProd = async (req, res, next) => {
     const idProd = req.params.id
 
     try{
@@ -86,12 +86,12 @@ export const delProd = async (req, res) => {
         
 
     }catch(error){
-        res.status(400).send(error.message)
+        next(error)
     }
 }
 
 
-export const putProd = async (req, res) => { 
+export const putProd = async (req, res, next) => { 
     const idProd = req.params.id
     const info = req.body
 
@@ -105,6 +105,6 @@ export const putProd = async (req, res) => {
         
 
     }catch(error){
-        res.status(400).send(error.message)
+        next(error)
     }
 }

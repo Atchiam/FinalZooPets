@@ -3,7 +3,7 @@ import { findProductsById } from "../services/productService.js"
 import productModel from "../models/MongoDB/productModel.js"
 import { createTicket } from "../services/ticketService.js"
 
-export const addProdToCart = async (req, res) => {
+export const addProdToCart = async (req, res, next) => {
     const idCart = req.session.user.cartId
     const idProduct = req.params.idProducto
     try {
@@ -22,14 +22,11 @@ export const addProdToCart = async (req, res) => {
         }
 
     } catch (error) {
-        res.status(500).send({
-            message: "Hubo un error en el servidor",
-            error: error.message
-        })
+        next(error)
     }
 }
 
-export const getCartId = async (req, res) => { //ANDA
+export const getCartId = async (req, res, next) => { //ANDA
 
         const id= req.session.user.cartId
         try {
@@ -38,12 +35,12 @@ export const getCartId = async (req, res) => { //ANDA
             return res.status(200).json({carritopopulated})
 
         } catch (error) {
-            res.status(400).send(error.message);
+            next(error);
         }
 
 
 }
-export const putAllArrayCart = async (req, res) => { //ANDA
+export const putAllArrayCart = async (req, res, next) => { //ANDA
 
         const cartId= req.session.user.cartId
         const data= req.body
@@ -52,12 +49,12 @@ export const putAllArrayCart = async (req, res) => { //ANDA
             return res.status(200).send(cart)
 
         }catch(error){
-            res.status(400).send(error.message)
+            next(error);
         }
 
 }
 
-export const putQuantityCart = async (req, res) => {//anda
+export const putQuantityCart = async (req, res, next) => {//anda
 
         const idCarrito = req.session.user.cartId
         const idProducto = req.params.idProducto
@@ -74,21 +71,21 @@ export const putQuantityCart = async (req, res) => {//anda
             return res.status(200).send("se agrego tu producto")
 
         }catch(error){
-            res.status(400).send(error.message)
+            next(error);
         }
 }
-export const deleteAllProdCart = async (req, res) => { //ANDA
+export const deleteAllProdCart = async (req, res, next) => { //ANDA
 
         const idCarrito= req.session.user.cartId
         try{
             await updateCart(idCarrito,{products: []})
             return res.status(200).send("se borraron todos los productos")   
         }catch(error){
-            res.status(400).send(error.message)
+            next(error);
         }
 }
 
-export const deleteOneProdCart = async (req, res) => { //ANDA
+export const deleteOneProdCart = async (req, res, next) => { //ANDA
         const idCarrito= req.session.user.cartId
         const idProducto = req.params.idProducto
         try{
@@ -100,12 +97,12 @@ export const deleteOneProdCart = async (req, res) => { //ANDA
             return res.status(200).send("se borro el producto de tu carrito")   
 
         }catch(error){
-            res.status(400).send(error.message)
+            next(error);
         }
         
 }
 
-export const checkout = async (req,res) => {
+export const checkout = async (req, res, next) => {
         const idCarrito= req.session.user.cartId
         const purchaser = req.session.user.email
         
@@ -145,6 +142,6 @@ export const checkout = async (req,res) => {
             return res.status(200).send({ticket:nuevoTicket})
 
         }catch(error){
-            res.status(400).send(error.message)
+            next(error);
         }
 }

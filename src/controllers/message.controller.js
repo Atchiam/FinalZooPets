@@ -2,7 +2,7 @@ import { Server} from 'socket.io'
 import { findMessage,insertMessage } from '../services/messageService.js'; 
 import { server } from '../index.js';
 
-export const messageio = async (req, res) => {
+export const messageio = async (req, res, next) => {
     if (req.session.login){
         try {
             //------ServerIO
@@ -26,7 +26,7 @@ export const messageio = async (req, res) => {
                     });
                 });
         } catch (error) {
-            res.status(400).send(error.message);
+            next(error);
         }
     }else{
         console.log("necesitas estar logiado para ingregar al chat");
