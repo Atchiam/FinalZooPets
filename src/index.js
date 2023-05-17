@@ -20,6 +20,8 @@ import routerGithub from './routes/github.routes.js';
 import routerMessage from "./routes/chat.routes.js"
 import routerFaker from "./ProductosFaker/routesFaker.routes.js"
 import { errorHandler } from "./config/errorHandler.js"
+import { addLogger } from "./utils/logger.js"
+import routerloggerTest from "./routes/loggerTest.routes.js"
 //CORS
 
 
@@ -113,6 +115,7 @@ app.engine('handlebars', engine({
 app.set("view engine", 'handlebars');
 app.set('views', path.resolve(__dirname, './views'))
 
+app.use(addLogger)
 
 //--------Routes
 app.use('/', express.static(__dirname + '/public'))
@@ -126,6 +129,7 @@ app.use('/api/sessions', routerSession)
 app.use('/user', routerUser)
 app.use('/authSession', routerGithub)
 app.use ('/faker', routerFaker)
+app.use("/loggerTest", routerloggerTest)
 
 //----- Middleware
 
