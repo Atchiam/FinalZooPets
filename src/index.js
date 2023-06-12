@@ -10,6 +10,8 @@ import initializePassport from './config/passport.js';
 import nodemailer from 'nodemailer'
 import { engine } from "express-handlebars";
 import * as path from 'path'
+import swaggerJSDoc from 'swagger-jsdoc';
+import swaggerUiExpress from 'swagger-ui-express'
 
 
 import routerCart from './routes/cart.routes.js';
@@ -43,6 +45,23 @@ app.use(session({
     resave: true,  //Me permita cerrar la pestaña o recargar y la sesion siga activa
     saveUninitialized: true  //Guardar sesion aunque no contenga info
 }))
+
+// Swagger
+
+const swaggerOptions = {
+    definition: {
+        openapi: '3.0.1',
+        info: {
+            title: "ZooPets",
+            description: "Tienda de mascotas la mejor de todas ponele"
+        }
+    },
+    apis: [`${__dirname}/docs/**/*.yaml`]
+}
+
+const specs = swaggerJSDoc(swaggerOptions)
+app.use('/apidocs', swaggerUiExpress.serve, swaggerUiExpress.setup(specs))
+
 
 //passwort
 initializePassport()

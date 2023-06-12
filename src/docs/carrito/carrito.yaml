@@ -1,0 +1,249 @@
+paths:
+  /cart:
+    get:
+      summary: "trae todos los productos del carrito se necesita que este logiado como user para acceder"
+      tags:
+        - cart
+      responses:
+        "200":
+          description: "carrito encontrado"
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/Cart"
+        "400":
+          description: "Error del servidor al encontrar el carrito"
+
+    put:
+      summary: "Agrega todos los productos del json al carrtio- se necesita que este logiado como user para acceder"
+      tags:
+        - cart
+      responses:
+        "200":
+          description: "carrito actualizado"
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/Cart"
+        "400":
+          description: "Error del servidor al encontrar el carrito"
+
+    delete:
+      summary: "elimina todos los productos del carrtio- se necesita que este logiado como user para acceder"
+      tags:
+        - cart
+      responses:
+        "200":
+          description: "carrito eliminado"
+        "400":
+          description: "Error del servidor al encontrar el carrito"
+
+  /cart/product/{idProducto}:
+    post:
+      summary: "agregar un productos dado su id -se necesita estar logiado como user"
+      tags:
+        - cart
+      parameters:
+      - name: idProducto
+        in: path
+        required: true
+        description: "Id del producto a agregar al carrito"
+        schema: 
+          $type: String
+      
+      responses:
+        "200":
+          description: "producto agregado"
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/Cart"
+        "400":
+          description: "Error del servidor al intentar agregar el producto"
+
+    put:
+      summary: "cambiar la cantidad un productos dado su id -se necesita estar logiado como user"
+      tags:
+        - cart
+      parameters:
+      - name: idProducto
+        in: path
+        required: true
+        description: "Id del producto a cambiar la cantidad en el carrito"
+        schema: 
+          $type: String
+      
+      responses:
+        "200":
+          description: "cantidad cambiada"
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/Cart"
+        "400":
+          description: "Error del servidor al intentar cambiar la cantidad del producto"
+
+    delete:
+      summary: "elimina un productos dado su id -se necesita estar logiado como user"
+      tags:
+        - cart
+      parameters:
+      - name: idProducto
+        in: path
+        required: true
+        description: "Id del producto a eliminar del carrito"
+        schema: 
+          $type: String
+      
+      responses:
+        "200":
+          description: "producto a eliminado"
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/Cart"
+        "400":
+          description: "Error del servidor al intentar eliminar el producto"
+
+  /cart/checkout:
+    get:
+      summary: "generacion de ticket de compra"
+      tags:
+        - cart
+      responses:
+        "200":
+          description: "ticket de compra"
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/ticket"
+        "400":
+          description: "Error del servidor al generar el ticket"
+
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: "Id autogenerado"
+        first_name:
+          type: String
+          description: "Nombre del Usuario"
+        last_name:
+          type: String
+          description: "Apellido del Usuario"
+        email:
+          type: String
+          description: "Email del Usuario"
+        age:
+          type: Number
+          description: "Edad del Usuario"
+        password:
+          type: String
+          description: "Contraseña del Usuario"
+        role:
+          type: String
+          description: "Rol del Usuario"
+        cartId:
+          type: ObjectId
+          description: "Id del carrito asociado al user"
+      example:
+        _id: ObjectId("12bb12bb12bb12bb12bb12bb")
+        first_name: "Christopher"
+        last_name: "Cisneros"
+        email: chris@chris.com
+        age: "21"
+        password: "1hda1fe1as1"
+        role: "User"
+        cartId: ObjectId("13bb13bb13bb13bb13bb13bb")
+
+    Cart:
+      type: object
+      properties:
+        products:
+          type: array
+          description: "id del producto y cantidad"
+          items:
+            type: object
+            properties:
+              productId: 
+                type: ObjectId
+                ref: "products"
+                description: "id del producto"
+              quantity:
+                type: number
+                description: "cantidad del producto"
+        total:
+          type: number
+          description: "precio total de los productos"
+      example:
+        _id: "6456c1b4bde9e2d17c72a338"
+        total: 0
+        products: []
+
+    ticket:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: "Id autogenerado"
+        code:
+          type: Number
+          description: "codigo autogenerado"
+        purchase_datetime:
+          type: Date
+          description: "dia y hora de la compra"
+        amount:
+          type: Number
+          description: "precio total de la compra"
+        purchaser:
+          type: String
+          description: "datos del comprador"
+
+    Product:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: "Id autogenerado"
+        title:
+          type: string
+          description: "Nombre del Producto"
+        description:
+          type: string
+          description: "description del Producto"
+        thumbnail:
+          type: array
+          description: "thumbnail del Producto"
+          items:
+            type: string
+        price:
+          type: number
+          description: "Precio del Producto"
+        code:
+          type: number
+          description: "codigo unico del Producto"
+        status:
+          type: boolean
+          description: "si se encuentra o no en stock"
+        stock:
+          type: number
+          description: "stock del Producto"
+        category:
+          type: string
+          description: "categoria del producto"
+      example:
+        _id: ObjectId("12bb12bb12bb12bb12bb12bb")
+        title: CCCCC
+        description: weqweqw
+        price: 111
+        thumbnail: [
+          "https://imgs.search.brave.com/7ZUlcgvs02mt-PTjx4ih8y_E3coqhw_KQcAtXP6Acbg/rs:fit:400:400:1/g:ce/aHR0cDovL2Nkbi5t/ZW1lZ2VuZXJhdG9y/LmVzL2ltYWdlbmVz/L21lbWVzL2Z1bGwv/MC82LzYxOTU1Lmpw/Zw"
+        ]
+        code: 3
+        status: true
+        stock: 2123
+        category: meme

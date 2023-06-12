@@ -19,3 +19,13 @@
 [31merror[39m: ERROR en alguna parte, seria eso que no ves, alguna categoria por ejemplo, quien sabe
 [33mwarning[39m: Warning,  Cuidado con...ahi viene corre!!.. AHHHhhh!!...
 [32mdebug[39m: OKEY, todo funciona aparentemente bien... o no?...
+[36minfo[39m: GET en / - 20:52:11 
+[36minfo[39m: GET en /products/ - 22:06:33 
+[36minfo[39m: GET en /products/6449980be158b9c378e8b8cf - 22:34:47 
+[36minfo[39m: POST en /api/sessions/login - 00:22:28 
+[36minfo[39m: GET en /cart - 00:22:35 
+[36minfo[39m: GET en /cart/ - 00:22:35 
+[36minfo[39m: POST en /cart/product/6456b7651928a3625dd15e77 - 00:26:16 
+[36minfo[39m: GET en /cart - 00:26:19 
+[36minfo[39m: GET en /cart/ - 00:26:20 
+[36minfo[39m: GET en / - 00:45:02 
