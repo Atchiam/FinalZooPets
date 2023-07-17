@@ -513,3 +513,6 @@
 [36minfo[39m: aca llego Pá
 [36minfo[39m: GET en /api/sessions/current - 02:26:43 
 [36minfo[39m: GET en /api/sessions/logout - 02:26:43 
+[36minfo[39m: GET en /products/ - 00:37:48 
+[36minfo[39m: GET en /favicon.ico - 00:37:48 
+[36minfo[39m: GET en /products/ - 00:46:39 
