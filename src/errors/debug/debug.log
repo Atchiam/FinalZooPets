@@ -516,3 +516,32 @@
 [36minfo[39m: GET en /products/ - 00:37:48 
 [36minfo[39m: GET en /favicon.ico - 00:37:48 
 [36minfo[39m: GET en /products/ - 00:46:39 
+[36minfo[39m: GET en /api/sessions/login - 01:19:17 
+[36minfo[39m: GET en /api/sessions/js/main.js - 01:19:18 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 01:19:18 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 01:19:42 
+[36minfo[39m: GET en /api/sessions/js/main.js - 01:19:42 
+[36minfo[39m: GET en /api/sessions/login - 01:20:06 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 01:20:06 
+[36minfo[39m: GET en /api/sessions/js/main.js - 01:20:06 
+[36minfo[39m: POST en /api/sessions/login - 01:20:11 
+[36minfo[39m: GET en /api/sessions/login - 01:20:14 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 01:20:14 
+[36minfo[39m: GET en /api/sessions/js/main.js - 01:20:14 
+[36minfo[39m: GET en /cart - 01:20:15 
+[36minfo[39m: GET en /cart/ - 01:20:15 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /api/sessions/css/styles.css - 01:20:18 
+[36minfo[39m: GET en /api/sessions/js/main.js - 01:20:18 
+[36minfo[39m: GET en /chat - 01:20:19 
+[36minfo[39m: GET en /chat/ - 01:20:19 
+[36minfo[39m: GET en /chat/css/styles.css - 01:20:19 
+[36minfo[39m: GET en /chat/js/main.js - 01:20:19 
+[36minfo[39m: GET en /api/sessions/login - 01:20:47 
+[36minfo[39m: GET en /api/sessions/js/main.js - 01:20:47 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 01:20:47 
+[36minfo[39m: POST en /api/sessions/login - 01:20:54 
+[36minfo[39m: GET en /api/sessions/login - 01:20:57 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 01:20:57 
+[36minfo[39m: GET en /api/sessions/js/main.js - 01:20:57 
