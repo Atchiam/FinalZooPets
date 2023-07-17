@@ -3,7 +3,7 @@ import passport from "passport"
 import { createHash, comparePassword } from "../utils/bcrypt.js"
 import GitHubStrategy from 'passport-github2'
 import { createCart } from "../services/cartService.js"
-import { createUser, findUserByEmail, findUserById } from "../services/UserService.js"
+import { createUser, findUserByEmail, findUserById } from "../services/userService.js"
 
 
 const LocalStrategy = local.Strategy
