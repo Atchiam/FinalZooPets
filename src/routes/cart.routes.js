@@ -12,7 +12,7 @@ routerCart.delete('/',sessionCheck("user"), controller.deleteAllProdCart)       
 routerCart.post('/product/:idProducto',sessionCheck("user"), controller.addProdToCart )        //anda
 routerCart.put('/product/:idProducto',sessionCheck("user"), controller.putQuantityCart)       //anda
 routerCart.delete('/product/:idProducto',sessionCheck("user"), controller.deleteOneProdCart) //anda
-routerCart.get('/checkout',sessionCheck("user"), controller.checkout)
+routerCart.post('/checkout',sessionCheck("user"), controller.checkout)                      //anda
 
 
 export default routerCart

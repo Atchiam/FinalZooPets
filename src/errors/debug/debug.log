@@ -29,3 +29,487 @@
 [36minfo[39m: GET en /cart - 00:26:19 
 [36minfo[39m: GET en /cart/ - 00:26:20 
 [36minfo[39m: GET en / - 00:45:02 
+[36minfo[39m: GET en /products/ - 19:10:23 
+[36minfo[39m: GET en /favicon.ico - 19:10:23 
+[36minfo[39m: GET en / - 19:10:26 
+[36minfo[39m: GET en /chat/ - 19:10:37 
+[36minfo[39m: GET en /chat/js/main.js - 19:10:37 
+[36minfo[39m: GET en /chat/css/styles.css - 19:10:38 
+[36minfo[39m: GET en /cart - 19:12:21 
+[36minfo[39m: GET en /cart/ - 19:12:21 
+[36minfo[39m: GET en /api/sessions/login - 19:12:24 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 19:12:24 
+[36minfo[39m: GET en /api/sessions/js/main.js - 19:12:24 
+[36minfo[39m: POST en /api/sessions/login - 19:12:33 
+[36minfo[39m: GET en /socket.io/?EIO=4&transport=polling&t=Ob1tOMq - 19:13:04 
+[36minfo[39m: GET en /api/sessions/login - 19:13:05 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 19:13:05 
+[36minfo[39m: GET en /api/sessions/js/main.js - 19:13:05 
+[36minfo[39m: POST en /api/sessions/login - 19:13:09 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 19:13:11 
+[36minfo[39m: GET en /api/sessions/js/main.js - 19:13:11 
+[36minfo[39m: POST en /api/sessions/login - 19:13:22 
+[36minfo[39m: GET en /api/sessions/login - 19:13:25 
+[36minfo[39m: GET en /api/sessions/js/main.js - 19:13:25 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 19:13:25 
+[36minfo[39m: GET en /cart/ - 19:13:29 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 19:14:24 
+[36minfo[39m: GET en /api/sessions/js/main.js - 19:14:24 
+[36minfo[39m: GET en /cart/ - 19:17:15 
+[36minfo[39m: GET en /cart/ - 19:23:58 
+[36minfo[39m: GET en /cart/js/main.js - 19:23:58 
+[36minfo[39m: GET en /cart/css/styles.css - 19:23:58 
+[36minfo[39m: GET en /products - 19:24:07 
+[36minfo[39m: GET en /products/ - 19:24:07 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 19:24:26 
+[36minfo[39m: GET en /api/sessions/js/main.js - 19:24:26 
+[36minfo[39m: GET en /cart/ - 19:24:28 
+[36minfo[39m: GET en /cart/css/styles.css - 19:24:29 
+[36minfo[39m: GET en /cart/js/main.js - 19:24:29 
+[36minfo[39m: GET en /products/ - 19:24:30 
+[36minfo[39m: GET en /products/ - 19:30:23 
+[36minfo[39m: GET en /products/js/main.js - 19:30:23 
+[36minfo[39m: GET en /products/css/styles.css - 19:30:23 
+[36minfo[39m: GET en /products/ - 19:30:26 
+[36minfo[39m: GET en /products/css/styles.css - 19:30:26 
+[36minfo[39m: GET en /products/js/main.js - 19:30:26 
+[36minfo[39m: GET en /products/ - 19:30:27 
+[36minfo[39m: GET en /products/css/styles.css - 19:30:27 
+[36minfo[39m: GET en /products/js/main.js - 19:30:27 
+[36minfo[39m: GET en /products/ - 19:30:28 
+[36minfo[39m: GET en /products/css/styles.css - 19:30:28 
+[36minfo[39m: GET en /products/js/main.js - 19:30:28 
+[36minfo[39m: GET en /products/ - 19:30:45 
+[36minfo[39m: GET en /products/css/styles.css - 19:30:46 
+[36minfo[39m: GET en /products/js/main.js - 19:30:46 
+[36minfo[39m: GET en /products/ - 19:31:00 
+[36minfo[39m: GET en /products/js/main.js - 19:31:01 
+[36minfo[39m: GET en /products/css/styles.css - 19:31:01 
+[36minfo[39m: GET en /cart/ - 19:31:17 
+[36minfo[39m: GET en /cart/js/main.js - 19:31:18 
+[36minfo[39m: GET en /cart/css/styles.css - 19:31:18 
+[36minfo[39m: GET en /products/ - 19:31:20 
+[36minfo[39m: GET en /products/css/styles.css - 19:31:20 
+[36minfo[39m: GET en /products/js/main.js - 19:31:20 
+[36minfo[39m: GET en /user/signup - 19:31:24 
+[36minfo[39m: GET en /user/css/styles.css - 19:31:24 
+[36minfo[39m: GET en /user/js/main.js - 19:31:24 
+[36minfo[39m: GET en /api/sessions/login - 19:31:25 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 19:31:25 
+[36minfo[39m: GET en /api/sessions/js/main.js - 19:31:25 
+[36minfo[39m: GET en /cart/ - 19:31:26 
+[36minfo[39m: GET en /cart/js/main.js - 19:31:26 
+[36minfo[39m: GET en /cart/css/styles.css - 19:31:26 
+[36minfo[39m: GET en /products/ - 19:31:27 
+[36minfo[39m: GET en /products/css/styles.css - 19:31:27 
+[36minfo[39m: GET en /products/js/main.js - 19:31:27 
+[36minfo[39m: GET en /products/ - 19:32:02 
+[36minfo[39m: GET en /products/js/main.js - 19:32:03 
+[36minfo[39m: GET en /products/css/styles.css - 19:32:03 
+[36minfo[39m: GET en /cart/ - 19:32:20 
+[36minfo[39m: GET en /cart/js/main.js - 19:32:20 
+[36minfo[39m: GET en /cart/css/styles.css - 19:32:20 
+[36minfo[39m: GET en /products/ - 19:32:21 
+[36minfo[39m: GET en /products/css/styles.css - 19:32:22 
+[36minfo[39m: GET en /products/js/main.js - 19:32:22 
+[36minfo[39m: GET en /cart/ - 19:32:26 
+[36minfo[39m: GET en /cart/css/styles.css - 19:32:27 
+[36minfo[39m: GET en /cart/js/main.js - 19:32:27 
+[36minfo[39m: GET en /chat - 19:32:28 
+[36minfo[39m: GET en /chat/ - 19:32:28 
+[36minfo[39m: GET en /chat/css/styles.css - 19:32:28 
+[36minfo[39m: GET en /chat/js/main.js - 19:32:28 
+[36minfo[39m: GET en /products/ - 19:32:28 
+[36minfo[39m: GET en /products/css/styles.css - 19:32:28 
+[36minfo[39m: GET en /products/js/main.js - 19:32:28 
+[36minfo[39m: GET en /products/ - 19:35:03 
+[36minfo[39m: GET en /products/css/styles.css - 19:35:03 
+[36minfo[39m: GET en /products/js/main.js - 19:35:04 
+[36minfo[39m: GET en /products/css/styles.css - 19:35:25 
+[36minfo[39m: GET en /products/ - 19:36:38 
+[36minfo[39m: GET en /products/css/styles.css - 19:36:38 
+[36minfo[39m: GET en /products/js/main.js - 19:36:38 
+[36minfo[39m: GET en /products/ - 19:37:01 
+[36minfo[39m: GET en /products/css/styles.css - 19:37:01 
+[36minfo[39m: GET en /products/js/main.js - 19:37:02 
+[36minfo[39m: GET en /products/ - 19:39:02 
+[36minfo[39m: GET en /products/css/styles.css - 19:39:02 
+[36minfo[39m: GET en /products/js/main.js - 19:39:03 
+[36minfo[39m: GET en /cart/ - 19:39:03 
+[36minfo[39m: GET en /cart/css/styles.css - 19:39:03 
+[36minfo[39m: GET en /cart/js/main.js - 19:39:04 
+[36minfo[39m: GET en /cart/ - 19:40:30 
+[36minfo[39m: GET en /cart/css/styles.css - 19:40:30 
+[36minfo[39m: GET en /cart/js/main.js - 19:40:31 
+[36minfo[39m: GET en /products/ - 19:40:32 
+[36minfo[39m: GET en /products/css/styles.css - 19:40:32 
+[36minfo[39m: GET en /products/js/main.js - 19:40:32 
+[36minfo[39m: GET en /cart/ - 19:40:45 
+[36minfo[39m: GET en /cart/css/styles.css - 19:40:45 
+[36minfo[39m: GET en /cart/js/main.js - 19:40:45 
+[36minfo[39m: GET en /products/ - 19:51:35 
+[36minfo[39m: GET en /products/css/styles.css - 19:51:35 
+[36minfo[39m: GET en /products/js/main.js - 19:51:36 
+[36minfo[39m: GET en /products/css/styles.css - 19:51:38 
+[36minfo[39m: GET en /user - 20:07:52 
+[36minfo[39m: GET en /user - 20:08:32 
+[36minfo[39m: GET en /user - 20:13:49 
+[36minfo[39m: GET en /user - 20:14:12 
+[36minfo[39m: GET en /user - 20:14:38 
+[36minfo[39m: GET en /user - 20:14:40 
+[36minfo[39m: GET en /user - 20:15:04 
+[36minfo[39m: GET en /user - 20:15:44 
+[36minfo[39m: GET en /user - 20:16:25 
+[36minfo[39m: GET en /user - 20:16:44 
+[36minfo[39m: GET en /user - 20:21:18 
+[36minfo[39m: GET en /user - 20:23:20 
+[36minfo[39m: GET en /user - 20:24:20 
+[36minfo[39m: GET en /user - 20:26:03 
+[36minfo[39m: GET en /user - 20:28:57 
+[36minfo[39m: GET en /api/sessions/logout - 20:30:06 
+[36minfo[39m: GET en /api/sessions/login - 20:30:11 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 20:30:11 
+[36minfo[39m: GET en /api/sessions/js/main.js - 20:30:12 
+[36minfo[39m: GET en /cart/ - 20:30:13 
+[36minfo[39m: GET en /api/sessions/js/main.js - 20:30:15 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 20:30:15 
+[36minfo[39m: GET en /chat - 20:30:18 
+[36minfo[39m: GET en /chat/ - 20:30:18 
+[36minfo[39m: GET en /chat/css/styles.css - 20:30:18 
+[36minfo[39m: GET en /chat/js/main.js - 20:30:18 
+[36minfo[39m: GET en /socket.io/?EIO=4&transport=polling&t=Ob29faQ - 20:32:54 
+[36minfo[39m: GET en /socket.io/?EIO=4&transport=polling&t=Ob29goR - 20:32:58 
+[36minfo[39m: GET en /socket.io/?EIO=4&transport=polling&t=Ob29iGA - 20:33:04 
+[36minfo[39m: GET en /socket.io/?EIO=4&transport=polling&t=Ob29jQt - 20:33:08 
+[36minfo[39m: GET en /chat/ - 20:33:11 
+[36minfo[39m: GET en /chat/css/styles.css - 20:33:11 
+[36minfo[39m: GET en /chat/js/main.js - 20:33:11 
+[36minfo[39m: POST en /user/signup - 20:43:51 
+[36minfo[39m: POST en /user/signup - 20:44:53 
+[36minfo[39m: POST en /api/sessions/login - 20:48:27 
+[36minfo[39m: POST en /api/sessions/login - 20:49:17 
+[36minfo[39m: GET en /api/sessions/logout - 20:49:55 
+[36minfo[39m: GET en /user - 21:07:51 
+[36minfo[39m: POST en /user/signup - 21:09:09 
+[36minfo[39m: POST en /api/sessions/login - 21:09:56 
+[36minfo[39m: GET en /user - 21:10:19 
+[36minfo[39m: GET en /user - 21:11:07 
+[36minfo[39m: GET en /user - 21:13:20 
+[36minfo[39m: DELETE en /user - 21:22:42 
+[36minfo[39m: DELETE en /user - 21:29:55 
+[36minfo[39m: DELETE en /user - 21:37:54 
+[36minfo[39m: DELETE en /user - 21:38:59 
+[36minfo[39m: DELETE en /user - 21:39:50 
+[36minfo[39m: DELETE en /user - 21:40:17 
+[36minfo[39m: DELETE en /user - 21:41:03 
+[36minfo[39m: DELETE en /user - 21:41:50 
+[36minfo[39m: DELETE en /user - 21:42:18 
+[36minfo[39m: DELETE en /user - 21:42:39 
+[36minfo[39m: DELETE en /user - 21:44:02 
+[36minfo[39m: POST en /user/signup - 21:45:27 
+[36minfo[39m: POST en /user/signup - 21:45:35 
+[36minfo[39m: POST en /user/signup - 21:46:17 
+[36minfo[39m: POST en /user/signup - 21:46:19 
+[36minfo[39m: POST en /user/signup - 21:46:23 
+[36minfo[39m: POST en /user/signup - 21:46:25 
+[36minfo[39m: POST en /user/signup - 21:46:31 
+[36minfo[39m: POST en /user/signup - 21:46:33 
+[36minfo[39m: DELETE en /user - 21:53:09 
+[36minfo[39m: DELETE en /user - 21:53:13 
+[36minfo[39m: POST en /api/sessions/login - 21:53:43 
+[36minfo[39m: DELETE en /user - 21:53:50 
+[36minfo[39m: POST en /user/signup - 21:55:09 
+[36minfo[39m: POST en /user/signup - 21:55:28 
+[36minfo[39m: POST en /user/signup - 22:18:47 
+[36minfo[39m: DELETE en /user - 22:18:55 
+[36minfo[39m: GET en /api/sessions/logout - 22:31:23 
+[36minfo[39m: POST en /user/signup - 22:31:29 
+[36minfo[39m: POST en /user/signup - 22:31:49 
+[36minfo[39m: POST en /api/sessions/login - 22:31:54 
+[36minfo[39m: GET en /cart - 22:32:18 
+[36minfo[39m: GET en /cart/ - 22:32:19 
+[36minfo[39m: GET en /products - 22:32:44 
+[36minfo[39m: GET en /products/ - 22:32:44 
+[36minfo[39m: POST en /products - 22:33:03 
+[36minfo[39m: POST en /cart/product/6456b7651928a3625dd15e77 - 22:33:15 
+[36minfo[39m: POST en /cart/product/6456b7651928a3625dd15e77 - 22:33:18 
+[36minfo[39m: POST en /cart/product/6456b7651928a3625dd15e77 - 22:33:19 
+[36minfo[39m: GET en /cart - 22:33:21 
+[36minfo[39m: GET en /cart/ - 22:33:21 
+[36minfo[39m: GET en /cart - 22:33:25 
+[36minfo[39m: GET en /cart/ - 22:33:25 
+[36minfo[39m: GET en /cart - 22:34:39 
+[36minfo[39m: GET en /cart/ - 22:34:39 
+[36minfo[39m: POST en /cart/product/6456b7651928a3625dd15e77 - 22:35:15 
+[36minfo[39m: GET en /cart - 22:36:36 
+[36minfo[39m: GET en /cart/ - 22:36:37 
+[36minfo[39m: DELETE en /cart/6456b7651928a3625dd15e77 - 22:37:38 
+[36minfo[39m: POST en /api/sessions/login - 22:38:04 
+[36minfo[39m: GET en /cart - 22:38:11 
+[36minfo[39m: GET en /cart/ - 22:38:11 
+[36minfo[39m: GET en /cart - 22:39:08 
+[36minfo[39m: GET en /cart/ - 22:39:08 
+[36minfo[39m: GET en /cart/checkout - 22:40:06 
+[36minfo[39m: POST en /cart/checkout - 22:41:12 
+[36minfo[39m: POST en /user/signup - 00:23:41 
+[36minfo[39m: POST en /user/signup - 00:24:53 
+[36minfo[39m: POST en /user/signup - 00:27:24 
+[36minfo[39m: POST en /api/sessions/login - 00:27:56 
+[36minfo[39m: POST en /user/signup - 00:28:15 
+[36minfo[39m: POST en /api/sessions/login - 00:28:16 
+[36minfo[39m: POST en /user/signup - 00:28:48 
+[36minfo[39m: POST en /api/sessions/login - 00:28:49 
+[36minfo[39m: POST en /user/signup - 00:30:14 
+[36minfo[39m: POST en /api/sessions/login - 00:30:14 
+[36minfo[39m: GET en /cart - 00:37:41 
+[36minfo[39m: GET en /cart/ - 00:37:41 
+[36minfo[39m: POST en /user/signup - 00:39:10 
+[36minfo[39m: POST en /api/sessions/login - 00:39:10 
+[36minfo[39m: POST en /user/signup - 00:40:06 
+[36minfo[39m: POST en /api/sessions/login - 00:40:06 
+[36minfo[39m: GET en /cart - 00:40:07 
+[36minfo[39m: POST en /user/signup - 00:41:48 
+[36minfo[39m: POST en /api/sessions/login - 00:41:48 
+[36minfo[39m: GET en /cart/ - 00:41:49 
+[36minfo[39m: POST en /user/signup - 00:42:20 
+[36minfo[39m: POST en /api/sessions/login - 00:42:20 
+[36minfo[39m: GET en /carcvt/ - 00:42:21 
+[36minfo[39m: POST en /user/signup - 00:44:30 
+[36minfo[39m: POST en /api/sessions/login - 00:44:31 
+[36minfo[39m: GET en /cart - 00:44:32 
+[36minfo[39m: POST en /user/signup - 00:47:55 
+[36minfo[39m: POST en /api/sessions/login - 00:47:55 
+[36minfo[39m: GET en /cart - 00:47:56 
+[36minfo[39m: POST en /user/signup - 00:48:26 
+[36minfo[39m: POST en /api/sessions/login - 00:48:26 
+[36minfo[39m: GET en /cart - 00:48:26 
+[36minfo[39m: POST en /user/signup - 00:49:10 
+[36minfo[39m: POST en /api/sessions/login - 00:49:10 
+[36minfo[39m: GET en /cart - 00:49:11 
+[36minfo[39m: GET en /cart - 00:49:28 
+[36minfo[39m: GET en /cart/ - 00:49:28 
+[36minfo[39m: GET en /cart - 00:49:34 
+[36minfo[39m: GET en /cart/ - 00:49:34 
+[36minfo[39m: GET en /cart - 00:49:36 
+[36minfo[39m: GET en /cart/ - 00:49:36 
+[36minfo[39m: GET en /cart - 00:49:37 
+[36minfo[39m: GET en /cart/ - 00:49:37 
+[36minfo[39m: POST en /user/signup - 00:52:28 
+[36minfo[39m: POST en /api/sessions/login - 00:52:28 
+[36minfo[39m: GET en /cart - 00:52:29 
+[36minfo[39m: POST en /user/signup - 00:57:43 
+[36minfo[39m: POST en /api/sessions/login - 00:57:43 
+[36minfo[39m: GET en /cart - 00:57:44 
+[36minfo[39m: POST en /user/signup - 01:12:44 
+[36minfo[39m: POST en /api/sessions/login - 01:12:45 
+[36minfo[39m: GET en /cart - 01:12:45 
+[36minfo[39m: POST en /user/signup - 01:13:44 
+[36minfo[39m: POST en /api/sessions/login - 01:13:45 
+[36minfo[39m: GET en /cart - 01:13:45 
+[36minfo[39m: POST en /user/signup - 01:17:11 
+[36minfo[39m: POST en /api/sessions/login - 01:17:11 
+[36minfo[39m: GET en /cart - 01:17:12 
+[36minfo[39m: POST en /user/signup - 01:19:16 
+[36minfo[39m: POST en /api/sessions/login - 01:19:16 
+[36minfo[39m: GET en /cart - 01:19:16 
+[36minfo[39m: GET en /cart - 01:19:37 
+[36minfo[39m: GET en /cart/ - 01:19:38 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /cart - 01:21:13 
+[36minfo[39m: GET en /cart/ - 01:21:14 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /cart - 01:21:27 
+[36minfo[39m: GET en /cart/ - 01:21:27 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /cart - 01:21:28 
+[36minfo[39m: GET en /cart/ - 01:21:28 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /products - 01:22:19 
+[36minfo[39m: GET en /products/ - 01:22:20 
+[36minfo[39m: POST en /user/signup - 01:22:58 
+[36minfo[39m: POST en /api/sessions/login - 01:22:58 
+[36minfo[39m: GET en /products - 01:22:59 
+[36minfo[39m: GET en /api/sessions/logout - 01:23:37 
+[36minfo[39m: GET en /products - 01:23:41 
+[36minfo[39m: GET en /products/ - 01:23:42 
+[36minfo[39m: GET en /products - 01:24:33 
+[36minfo[39m: GET en /products/ - 01:24:33 
+[36minfo[39m: POST en /user/signup - 01:24:50 
+[36minfo[39m: POST en /api/sessions/login - 01:24:50 
+[36minfo[39m: GET en /products - 01:24:50 
+[36minfo[39m: POST en /user/signup - 01:26:05 
+[36minfo[39m: POST en /api/sessions/login - 01:26:05 
+[36minfo[39m: GET en /products - 01:26:06 
+[36minfo[39m: POST en /user/signup - 01:29:08 
+[36minfo[39m: POST en /api/sessions/login - 01:29:08 
+[36minfo[39m: GET en /api/sessions/current - 01:29:08 
+[36minfo[39m: POST en /user/signup - 01:29:43 
+[36minfo[39m: POST en /api/sessions/login - 01:29:43 
+[36minfo[39m: GET en /api/sessions/current - 01:29:44 
+[36minfo[39m: GET en /products - 01:30:39 
+[36minfo[39m: GET en /products/ - 01:30:39 
+[36minfo[39m: GET en /products - 01:30:51 
+[36minfo[39m: GET en /products/ - 01:30:51 
+[36minfo[39m: GET en /cart - 01:31:02 
+[36minfo[39m: GET en /cart/ - 01:31:02 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: POST en /api/sessions/login - 01:31:09 
+[36minfo[39m: GET en /cart - 01:31:35 
+[36minfo[39m: GET en /cart/ - 01:31:35 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /user/signup - 01:36:22 
+[36minfo[39m: POST en /api/sessions/login - 01:36:22 
+[36minfo[39m: GET en /api/sessions/cart - 01:36:23 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /user/signup - 01:38:52 
+[36minfo[39m: POST en /api/sessions/login - 01:38:53 
+[36minfo[39m: GET en /cart - 01:38:53 
+[36minfo[39m: POST en /user/signup - 01:39:13 
+[36minfo[39m: POST en /api/sessions/login - 01:39:13 
+[36minfo[39m: GET en /cart/ - 01:39:13 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /cart - 01:39:53 
+[36minfo[39m: GET en /cart/ - 01:39:53 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /user/signup - 01:40:59 
+[36minfo[39m: POST en /api/sessions/login - 01:40:59 
+[36minfo[39m: GET en /cart/ - 01:41:00 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /user/signup - 01:42:39 
+[36minfo[39m: POST en /api/sessions/login - 01:42:39 
+[36minfo[39m: GET en /cart/ - 01:42:40 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /user/signup - 01:43:08 
+[36minfo[39m: POST en /api/sessions/login - 01:43:08 
+[36minfo[39m: GET en /cart - 01:43:09 
+[36minfo[39m: POST en /user/signup - 01:43:20 
+[36minfo[39m: POST en /api/sessions/login - 01:43:20 
+[36minfo[39m: POST en /user/signup - 01:43:38 
+[36minfo[39m: POST en /api/sessions/login - 01:43:38 
+[36minfo[39m: GET en /cart/ - 01:43:39 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /user/signup - 01:44:37 
+[36minfo[39m: POST en /api/sessions/login/ - 01:44:37 
+[36minfo[39m: GET en /cart/ - 01:44:38 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /user/signup - 01:46:50 
+[36minfo[39m: POST en /api/sessions/login/ - 01:46:50 
+[36minfo[39m: GET en /cart/asd - 01:46:50 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /user/signup - 01:50:09 
+[36minfo[39m: POST en /api/sessions/login/ - 01:50:09 
+[36minfo[39m: GET en /cart/ - 01:50:09 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /api/sessions/login - 02:01:28 
+[36minfo[39m: POST en /user/signup - 02:05:09 
+[36minfo[39m: POST en /api/sessions/login/ - 02:05:10 
+[36minfo[39m: GET en /cart/ - 02:05:10 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /api/sessions/current - 02:05:10 
+[36minfo[39m: POST en /user/signup - 02:06:09 
+[36minfo[39m: POST en /api/sessions/login/ - 02:06:09 
+[36minfo[39m: GET en /cart/ - 02:06:09 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /api/sessions/current - 02:06:09 
+[36minfo[39m: POST en /user/signup - 02:09:12 
+[36minfo[39m: POST en /api/sessions/login/ - 02:09:12 
+[36minfo[39m: GET en /cart/ - 02:09:12 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /api/sessions/current - 02:09:13 
+[36minfo[39m: POST en /user/signup - 02:11:43 
+[36minfo[39m: POST en /api/sessions/login/ - 02:11:43 
+[36minfo[39m: GET en /cart/ - 02:11:44 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /api/sessions/current - 02:11:44 
+[36minfo[39m: GET en /api/sessions/logout - 02:11:44 
+[36minfo[39m: POST en /user/signup - 02:12:28 
+[36minfo[39m: POST en /api/sessions/login/ - 02:12:29 
+[36minfo[39m: GET en /cart/ - 02:12:29 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /api/sessions/current - 02:12:29 
+[36minfo[39m: GET en /api/sessions/logout - 02:12:30 
+[36minfo[39m: POST en /user/signup - 02:13:11 
+[36minfo[39m: POST en /api/sessions/login/ - 02:13:12 
+[36minfo[39m: GET en /cart/ - 02:13:12 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /api/sessions/current - 02:13:13 
+[36minfo[39m: GET en /api/sessions/logout - 02:13:13 
+[36minfo[39m: POST en /user/signup - 02:13:20 
+[36minfo[39m: POST en /api/sessions/login/ - 02:13:20 
+[36minfo[39m: GET en /cart/ - 02:13:21 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /api/sessions/current - 02:13:21 
+[36minfo[39m: GET en /api/sessions/logout - 02:13:21 
+[36minfo[39m: POST en /user/signup - 02:20:32 
+[36minfo[39m: POST en /api/sessions/login/ - 02:20:33 
+[36minfo[39m: GET en /cart/ - 02:20:34 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: DELETE en /user/ - 02:20:34 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/current - 02:20:34 
+[36minfo[39m: GET en /api/sessions/logout - 02:20:34 
+[36minfo[39m: POST en /user/signup - 02:23:25 
+[36minfo[39m: POST en /api/sessions/login/ - 02:23:25 
+[36minfo[39m: GET en /cart/ - 02:23:26 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /api/sessions/current - 02:23:26 
+[36minfo[39m: GET en /api/sessions/logout - 02:23:26 
+[36minfo[39m: POST en /user/signup - 02:24:28 
+[36minfo[39m: POST en /api/sessions/login/ - 02:24:29 
+[36minfo[39m: GET en /cart/ - 02:24:30 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: DELETE en /user/ - 02:24:30 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/current - 02:24:30 
+[36minfo[39m: GET en /api/sessions/logout - 02:24:30 
+[36minfo[39m: POST en /user/signup - 02:25:51 
+[36minfo[39m: POST en /api/sessions/login/ - 02:25:52 
+[36minfo[39m: GET en /cart/ - 02:25:53 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: DELETE en /user/ - 02:25:53 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/current - 02:25:53 
+[36minfo[39m: GET en /api/sessions/logout - 02:25:53 
+[36minfo[39m: POST en /user/signup - 02:26:15 
+[36minfo[39m: POST en /api/sessions/login/ - 02:26:16 
+[36minfo[39m: GET en /cart/ - 02:26:16 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: DELETE en /user/ - 02:26:16 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/current - 02:26:17 
+[36minfo[39m: GET en /api/sessions/logout - 02:26:17 
+[36minfo[39m: POST en /user/signup - 02:26:42 
+[36minfo[39m: POST en /api/sessions/login/ - 02:26:42 
+[36minfo[39m: GET en /cart/ - 02:26:43 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: DELETE en /user/ - 02:26:43 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/current - 02:26:43 
+[36minfo[39m: GET en /api/sessions/logout - 02:26:43 

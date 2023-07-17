@@ -1,10 +1,25 @@
 import userModel from "../models/MongoDB/userModel.js"
 import CustomError from "../utils/customError.js";
 import EErrors from "../utils/enums.js";
+import { sendDeleteMails } from "../utils/nodemailer.js";
 
 export const findUsers = async () => {
     try {
-        const users = await userModel.find()
+        const users = await userModel.find({}, 'first_name email role');
+        return users
+    } catch (error) {
+        CustomError.createError({
+            name:"Nombre generico de Error de DB",
+            cause: error.message,
+            message: "Error al encontrar a los usuarios",
+            code: EErrors.DATABASE_ERROR
+        })
+    }
+}
+
+export const findUsersAll = async () => {
+    try {
+        const users = await userModel.find({});
         return users
     } catch (error) {
         CustomError.createError({
@@ -58,19 +73,22 @@ export const createUser = async (user) => {
     }
 }
 
-export const deleteUser = async (id) => {
+export const deleteUser = async (userIds, mails) => {
     try {
-        const users = await userModel.findByIdAndDelete(id)
-        return users
+        const deletedUsers = await userModel.deleteMany({ _id: { $in: userIds } });
+        sendDeleteMails(mails)
+        
+        return deletedUsers;
     } catch (error) {
         CustomError.createError({
-            name:"Nombre generico de Error de DB",
+            name: "Nombre genérico de Error de DB",
             cause: error.message,
-            message: "Error al eliminar el usuario",
-            code: EErrors.DATABASE_ERROR
-        })
+            message: "Error al eliminar los usuarios",
+            code: EErrors.DATABASE_ERROR,
+        });
     }
-}
+};
+
 
 export const updateUser = async (id, info) => {
     try {

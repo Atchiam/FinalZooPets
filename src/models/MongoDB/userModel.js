@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const userSchema = new Schema({
+const userSchema = new Schema({  
     first_name: {
         type: String,
         required: true
@@ -16,6 +16,7 @@ const userSchema = new Schema({
     },
     age: {
         type: Number,
+        default: 18,
         required: true
     },
     password: {
@@ -29,6 +30,11 @@ const userSchema = new Schema({
     cartId: {
         type: Schema.Types.ObjectId,
         ref: "carts",
+        required: true
+    },
+    last_connection: {
+        type: Date,
+        default: Date.now,
         required: true
     }
 })

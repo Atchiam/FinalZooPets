@@ -35,6 +35,11 @@ export const getProd =
             nextLink: linkNext,}
 
             const data = req.query.menssage;
+            
+            // res.render('products', { titulo: "PetsShop - Catalogo",
+            // paginate: send,
+            // products: send.payload,
+            // menssage:data});
 
             res.status(200).json({ 
                 titulo: "PetsShop - Catalogo",
@@ -63,7 +68,6 @@ export const getProdId = async (req, res, next) => {
 
 export const addProd = async (req, res, next) => { 
     const info = req.body
-
     try{
         const prod = await insertProducts(info)
         return res.status(200).send(prod)

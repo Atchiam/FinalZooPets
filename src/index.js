@@ -7,7 +7,6 @@ import MongoStore from 'connect-mongo'
 import mongoose from 'mongoose'
 import passport from 'passport';
 import initializePassport from './config/passport.js';
-import nodemailer from 'nodemailer'
 import { engine } from "express-handlebars";
 import * as path from 'path'
 import swaggerJSDoc from 'swagger-jsdoc';
@@ -97,34 +96,6 @@ app.get('/getCookie', (req, res) => {
     res.send(req.signedCookies)
 })
 
-//mandar e-mail
-
-let transporter = nodemailer.createTransport({ //Genero la forma de enviar info desde mail (o sea, desde Gmail con x cuenta)
-    host: 'smtp.gmail.com', //Defino que voy a utilizar un servicio de Gmail
-    port: 465,
-    secure: true,
-    auth: {
-        user: "atchiam.fe@gmail.com", //Mail del que se envia informacion
-        pass: "wkohkvdycnlkesmq",
-        authMethod: 'LOGIN'
-    }
-
-})
-
-app.get('/email', async (req, res) => {
-    await transporter.sendMail({
-        from: 'Test Coder franciscopugh3@gmail.com',
-        to: "franciscopugh01@gmail.com",
-        subject: "Chiste",
-        html: `
-            <div>
-                <h2>¿Cuántos programadores hacen falta para cambiar una bombilla? – Ninguno, porque es un problema hardware. </h2>
-            </div>
-        `,
-        attachments: []
-    })
-    res.send("Email enviado")
-})
 app.engine('handlebars', engine({
     runtimeOptions: {
         allowProtoPropertiesByDefault: true,

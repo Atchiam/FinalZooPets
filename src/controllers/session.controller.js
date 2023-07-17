@@ -9,6 +9,7 @@ import passport from "passport";
 import CustomError from "../utils/customError.js";
 import EErrors from "../utils/enums.js";
 import { generateUserErrorInfo } from "../utils/info.js";
+import { findUsers, updateUser } from "../services/userService.js";
 export const registerUser = async (req, res, next) => {
     try {
         const {first_name,last_name,email,age,password}= req.body
@@ -46,6 +47,7 @@ export const loginUser = async (req, res, next) => {
             }
             req.session.login = true
             req.session.user = user
+            await updateUser(user._id, { last_connection: Date.now() })
             res.status(200).send(`Hola ${user.first_name}, tu roll es ${user.role} `);
         })(req, res, next);
 
@@ -57,7 +59,9 @@ export const loginUser = async (req, res, next) => {
 export const destroySession = async (req, res, next) => {
     try {
         if (req.session.login) {
+            const userId = req.session.user._id
             req.session.destroy();
+            await updateUser(userId, { last_connection: Date.now() })
             res.status(200).send("hasta luego, recorda que siqueres ver nuestra pagina necesitas logiarte");
         } else {
             res.status(400).send("necesitas estar logiado para irte");
@@ -78,3 +82,13 @@ export const current = async (req, res, next) => {
         next(error);
     }
 };
+
+export const allUser = async (req, res, next) => {
+    try {
+        const users = await findUsers();
+        res.status(200).json(users); 
+        } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: "Error al obtener los usuarios" }); 
+        }
+}

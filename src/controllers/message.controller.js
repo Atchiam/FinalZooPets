@@ -35,7 +35,7 @@ export const messageio = async (req, res, next) => {
             io.on("connection", async (socket)=>{ 
                 //------Mensajes
                     console.log("Cliente conectado");
-                    const messages = [{user:"El servidor",email:"s@s.com",message:"Hola, ¡Bienvenido al servidor recorda que tenes que estar logiado para esto mientras te logias podes ver este video explicativo www.youtube.com/watch?v=C0fytYVZ_mQ"}]
+                    const messages = [{user:"El servidor",email:"s@s.com",message:"Hola, ¡Bienvenido al servidor recorda que tenes que estar logiado para esto mientras te logias podes ver este video explicativo https://www.youtube.com/watch?v=mCdA4bJAGGk"}]
                     socket.emit("allMessages", messages);
                 });
     }

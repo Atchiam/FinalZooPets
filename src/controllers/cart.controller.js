@@ -27,8 +27,9 @@ export const addProdToCart = async (req, res, next) => {
 }
 
 export const getCartId = async (req, res, next) => { //ANDA
-
+        req.logger.info("aca llego papa")
         const id= req.session.user.cartId
+        console.log(id);
         try {
             const cart = await findCartById(id)
             const carritopopulated= await cart.populate({path: "products.productId", model: productModel})

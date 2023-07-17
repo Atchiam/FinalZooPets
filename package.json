@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js --mode DEVELOPMENT",
-    "prod": "nodemon src/index.js --mode PRODUCTION"
+    "prod": "nodemon src/index.js --mode PRODUCTION",
+    "test": "mocha test/mokaChai.test.js"
   },
   "keywords": [],
   "author": "",
@@ -39,6 +40,9 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
-    "nodemon": "^2.0.22"
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
   }
 }
