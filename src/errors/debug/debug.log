@@ -545,3 +545,12 @@
 [36minfo[39m: GET en /api/sessions/login - 01:20:57 
 [36minfo[39m: GET en /api/sessions/css/styles.css - 01:20:57 
 [36minfo[39m: GET en /api/sessions/js/main.js - 01:20:57 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 01:21:27 
+[36minfo[39m: GET en /api/sessions/js/main.js - 01:21:27 
+[36minfo[39m: POST en /api/sessions/login - 01:21:30 
+[36minfo[39m: GET en /api/sessions/login - 01:21:32 
+[36minfo[39m: GET en /api/sessions/js/main.js - 01:21:32 
+[36minfo[39m: GET en /api/sessions/css/styles.css - 01:21:32 
+[36minfo[39m: GET en /chat/ - 01:21:37 
+[36minfo[39m: GET en /chat/css/styles.css - 01:21:37 
+[36minfo[39m: GET en /chat/js/main.js - 01:21:37 
