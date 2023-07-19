@@ -3,10 +3,10 @@ import { getProd, getProdId,addProd,delProd,putProd } from "../controllers/produ
 import { sessionCheck } from "../config/sessionCheck.js";
 // /products
 const routerProduct = Router()
-routerProduct.get('/', getProd)                                 //anda
-routerProduct.get('/:id', getProdId)                           //anda
-routerProduct.post('/',sessionCheck("admin"), addProd)        //anda
-routerProduct.delete('/:id',sessionCheck("admin"), delProd)  //anda
-routerProduct.put('/:id',sessionCheck("admin"), putProd)    //anda
+routerProduct.get('/', getProd)                                 
+routerProduct.get('/:id', getProdId)                           
+routerProduct.post('/',sessionCheck("admin"), addProd)        
+routerProduct.delete('/:id',sessionCheck("admin"), delProd)  
+routerProduct.put('/:id',sessionCheck("admin"), putProd)    
 
 export default routerProduct

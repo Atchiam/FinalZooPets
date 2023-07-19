@@ -26,7 +26,7 @@ export const addProdToCart = async (req, res, next) => {
     }
 }
 
-export const getCartId = async (req, res, next) => { //ANDA
+export const getCartId = async (req, res, next) => { 
         req.logger.info("aca llego papa")
         const id= req.session.user.cartId
         console.log(id);
@@ -41,7 +41,7 @@ export const getCartId = async (req, res, next) => { //ANDA
 
 
 }
-export const putAllArrayCart = async (req, res, next) => { //ANDA
+export const putAllArrayCart = async (req, res, next) => { 
 
         const cartId= req.session.user.cartId
         const data= req.body
@@ -55,7 +55,7 @@ export const putAllArrayCart = async (req, res, next) => { //ANDA
 
 }
 
-export const putQuantityCart = async (req, res, next) => {//anda
+export const putQuantityCart = async (req, res, next) => {
 
         const idCarrito = req.session.user.cartId
         const idProducto = req.params.idProducto
@@ -75,7 +75,7 @@ export const putQuantityCart = async (req, res, next) => {//anda
             next(error);
         }
 }
-export const deleteAllProdCart = async (req, res, next) => { //ANDA
+export const deleteAllProdCart = async (req, res, next) => { 
 
         const idCarrito= req.session.user.cartId
         try{
@@ -86,7 +86,7 @@ export const deleteAllProdCart = async (req, res, next) => { //ANDA
         }
 }
 
-export const deleteOneProdCart = async (req, res, next) => { //ANDA
+export const deleteOneProdCart = async (req, res, next) => { 
         const idCarrito= req.session.user.cartId
         const idProducto = req.params.idProducto
         try{

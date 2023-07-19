@@ -554,3 +554,171 @@
 [36minfo[39m: GET en /chat/ - 01:21:37 
 [36minfo[39m: GET en /chat/css/styles.css - 01:21:37 
 [36minfo[39m: GET en /chat/js/main.js - 01:21:37 
+[36minfo[39m: GET en /api/sessions/current - 21:17:08 
+[36minfo[39m: GET en /api/sessions/logout - 21:17:18 
+[36minfo[39m: POST en /user/signup - 21:17:38 
+[36minfo[39m: POST en /user/signup - 21:18:41 
+[36minfo[39m: POST en /api/sessions/login - 21:21:57 
+[36minfo[39m: POST en /api/sessions/login - 21:22:02 
+[36minfo[39m: GET en /api/sessions/logout - 21:22:06 
+[36minfo[39m: POST en /user/signup - 21:22:26 
+[36minfo[39m: POST en /api/sessions/login - 21:24:53 
+[36minfo[39m: GET en /api/sessions/logout - 21:24:57 
+[36minfo[39m: GET en /api/sessions/current - 21:25:29 
+[36minfo[39m: POST en /api/sessions/login - 21:25:32 
+[36minfo[39m: GET en /api/sessions/current - 21:25:34 
+[36minfo[39m: GET en /products?limit=&page=&sort&category - 21:27:35 
+[36minfo[39m: GET en /products/?limit=&page=&sort&category - 21:27:35 
+[36minfo[39m: GET en /products - 21:27:46 
+[36minfo[39m: GET en /products/ - 21:27:46 
+[36minfo[39m: GET en /products?limit=1&page=&sort=1&category - 21:28:19 
+[36minfo[39m: GET en /products/?limit=1&page=&sort=1&category - 21:28:19 
+[36minfo[39m: GET en /products?limit=&page=&sort=1&category - 21:28:30 
+[36minfo[39m: GET en /products/?limit=&page=&sort=1&category - 21:28:30 
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category - 21:28:36 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category - 21:28:36 
+[36minfo[39m: POST en /products?limit=&page=&sort&category - 21:33:39 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category - 21:33:48 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category - 21:33:48 
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category=Comida - 21:34:04 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category=Comida - 21:34:04 
+[36minfo[39m: PUT en /products/64b72f63edd4b4a950129151 - 21:37:11 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category=Comida - 21:37:17 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category=Comida - 21:37:17 
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category= - 21:37:35 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category= - 21:37:35 
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category= - 21:38:14 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category= - 21:38:14 
+[36minfo[39m: DELETE en /products/6449973be158b9c378e8b8cd - 21:38:33 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category= - 21:38:38 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category= - 21:38:38 
+[36minfo[39m: GET en /faker - 21:41:33 
+[36minfo[39m: GET en /faker/mockingproducts - 21:41:40 
+[36minfo[39m: GET en /faker - 21:41:51 
+[36minfo[39m: GET en /user - 21:44:32 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/current - 21:44:46 
+[36minfo[39m: GET en /cart - 21:46:16 
+[36minfo[39m: GET en /cart/ - 21:46:16 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/logout - 21:46:25 
+[36minfo[39m: POST en /api/sessions/login - 21:46:29 
+[36minfo[39m: GET en /cart - 21:46:36 
+[36minfo[39m: GET en /cart/ - 21:46:36 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /user - 21:46:47 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/logout - 21:46:51 
+[36minfo[39m: POST en /api/sessions/login - 21:46:57 
+[36minfo[39m: POST en /api/sessions/login - 21:47:19 
+[36minfo[39m: DELETE en /user - 21:47:26 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category= - 21:48:43 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category= - 21:48:43 
+[36minfo[39m: POST en /cart/product/64b72f63edd4b4a950129151 - 21:49:02 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/logout - 21:49:14 
+[36minfo[39m: POST en /api/sessions/login - 21:49:19 
+[36minfo[39m: POST en /api/sessions/login - 21:49:43 
+[36minfo[39m: GET en /api/sessions/current - 21:50:08 
+[36minfo[39m: POST en /cart/product/64b72f63edd4b4a950129151 - 21:50:14 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: POST en /cart/product/64b72f63edd4b4a950129151 - 21:50:15 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 21:50:19 
+[36minfo[39m: GET en /cart/ - 21:50:19 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /cart/checkout - 21:52:07 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: POST en /cart/checkout - 21:52:18 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 21:52:40 
+[36minfo[39m: GET en /cart/ - 21:52:40 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category= - 21:52:51 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category= - 21:52:51 
+[36minfo[39m: PUT en /products/64b72f63edd4b4a950129151 - 21:53:09 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/logout - 21:53:17 
+[36minfo[39m: POST en /api/sessions/login - 21:53:20 
+[36minfo[39m: PUT en /products/64b72f63edd4b4a950129151 - 21:53:26 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /api/sessions/logout - 21:53:31 
+[36minfo[39m: POST en /api/sessions/login - 21:53:34 
+[36minfo[39m: GET en /cart - 21:53:38 
+[36minfo[39m: GET en /cart/ - 21:53:38 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /cart/checkout - 21:53:47 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 21:53:52 
+[36minfo[39m: GET en /cart/ - 21:53:52 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category= - 21:55:46 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category= - 21:55:46 
+[36minfo[39m: PUT en /cart/product/64b72f63edd4b4a950129151 - 21:56:30 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: PUT en /cart/product/6412aa1c59eebad61111be7b - 21:56:43 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 21:57:09 
+[36minfo[39m: GET en /cart/ - 21:57:09 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /cart/product/64b72f63edd4b4a950129151 - 21:57:19 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 21:57:23 
+[36minfo[39m: GET en /cart/ - 21:57:23 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: PUT en /cart/product/64b72f63edd4b4a950129151 - 21:57:30 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 21:57:35 
+[36minfo[39m: GET en /cart/ - 21:57:35 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: PUT en /cart - 22:18:44 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 22:19:50 
+[36minfo[39m: GET en /cart/ - 22:19:51 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: DELETE en /cart/product/6449980be158b9c378e8b8cf - 22:21:53 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 22:22:01 
+[36minfo[39m: GET en /cart/ - 22:22:01 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: DELETE en /cart - 22:22:32 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 22:22:37 
+[36minfo[39m: GET en /cart/ - 22:22:37 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: POST en /cart/product/64b72f63edd4b4a950129151 - 22:22:44 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 22:22:46 
+[36minfo[39m: GET en /cart/ - 22:22:47 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: PUT en /cart - 22:22:52 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 22:22:56 
+[36minfo[39m: GET en /cart/ - 22:22:56 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: DELETE en /cart - 22:23:04 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: GET en /cart - 22:23:08 
+[36minfo[39m: GET en /cart/ - 22:23:08 
+[36minfo[39m: aca llego Pá
+[36minfo[39m: aca llego papa
+[36minfo[39m: GET en /products?limit=10&page=&sort=1&category= - 22:26:51 
+[36minfo[39m: GET en /products/?limit=10&page=&sort=1&category= - 22:26:51 
+[36minfo[39m: GET en /products/64b72f63edd4b4a950129151 - 22:27:29 
